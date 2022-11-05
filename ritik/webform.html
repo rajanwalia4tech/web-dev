@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            padding:10px;
+        }
+        .container {
+            border: 3px solid gray;
+            /* height: 500px;/ */
+        }
+        form{
+            /* border:2px solid green; */
+        }
+
+        input[type=text],input[type=button]{
+            width:100%;
+            padding:5px;
+            box-sizing: border-box;
+        }
+        .field{
+            margin:10px 0;
+        }
+        .loginBtn{
+            background-color: red;
+            border:2px solid red;
+            color:white;
+        }
+        input[type=checkbox]{
+            width: 10px;
+            height:10px;
+        }
+        .label{
+            padding-bottom:5px;
+        }
+        span{
+            font-size: small;
+        }
+        footer{
+            background-color: gray;
+            padding:15px;
+        }
+        footer > div{
+
+            display: inline-block;
+            width:47%;
+        }
+        .cancelBtn{
+            background-color:yellow ;
+            border: 2px solid yellow;
+            color:white;
+        }
+        .forgot-password{
+            text-align: left;
+        }
+        h2{
+            margin:0;
+            padding-left: 0;
+        }
+        img{
+            width:100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .img{
+            padding-top:20px;
+            margin: auto;
+            width:50%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form action="">
+            <div class="imgField">
+                <div class="img">
+                    <img src="../html/images/earth.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="label">
+                    <span>Username</span>
+                </div>
+                <div class="input">
+                    <input type="text" name="" placeholder="Enter Username" id="">
+                </div>
+            </div>
+            <div class="field">
+                <div class="label">
+                    <span>Email</span>
+                </div>
+                <div class="input">
+                    <input type="text" name="" placeholder="Enter Email" id="">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="label">
+                    <span>Password</span>
+                </div>
+                <div class="input">
+                    <input type="text" name="" placeholder="Enter Password" id="">
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input class="loginBtn" type="button" name="" value="Login" id="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="input">
+                    <input type="checkbox" name="" id="">
+                    <small>Remember me</small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="btn">
+                <button class="cancelBtn"> Cancel</button>
+        </div>
+        <div class="forgot-password">
+            <span>Forgot <a href="https://example.com">Password</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
