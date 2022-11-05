@@ -1,0 +1,52 @@
+a:link{ unclicked
+    color:blue;
+}
+
+a:visited{
+    color:red;
+    text-decoration: none;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{ /* focused */
+    color:blue;
+}
+
+.first{
+    list-style-type: circle;
+    list-style-type: none;
+    list-style-type: upper-latin;
+}
+
+.second{
+    list-style-type: square;
+}
+
+.inner{
+    text-align: left;
+    display: inline-block;
+    width:46%;
+    border:3px solid blue;
+}
+
+.outer{
+    text-align: right;
+    border:2px solid red;
+    padding:20px;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}

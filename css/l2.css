@@ -1,0 +1,82 @@
+body{
+    border:2px solid blue;
+    margin:0;
+}
+
+h1{
+    color:red;
+    border:2px solid green;
+}
+
+#box1{
+    color:blue;
+    border:5px solid green;
+    border-color: blue;
+    outline:5px solid yellowgreen;
+    padding:10px;
+    margin:20px;
+}
+
+ h3{
+    color:blue;
+    /* background-color: aquamarine; */
+    /* text-align: center;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;  */
+
+    /* text-decoration: underline 5px green solid; */
+}
+
+#b5,#b4{
+    text-shadow: 15px 15px 2px blue;
+}
+
+a{
+    
+    /* text-decoration: none;
+    text-decoration-line: overline; */ 
+}
+
+/* h2{
+    /* word-spacing: 5px; */
+    /* letter-spacing: 15px; */
+    /* line-height: 20px; */
+    /* text-indent: 150px;  */
+
+
+.common{
+    color:green;
+    background-color: aqua;
+}
+
+.heading3{
+    border:2px solid yellow;
+}
+
+.heading2{
+    border:2px solid blue;
+}
+
+
+a:link{ /* unclicked */
+    color:green;
+}
+
+a:visited{
+    color:red;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{ /* focused */
+    color:blue;
+}
+
+.first{
+    list-style-type: square;
+}

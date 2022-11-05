@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1{
+            color:green;
+        }
+        *{
+            Color:red;
+            margin:0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .heading{
+            color:blue;
+        }
+        #main{
+            color:gray;
+        }
+        a[title]{
+            color:blue;
+        }
+
+        h1[id=box]{
+            background-color: beige;
+        }
+        h1[class~="main"]{
+            border:2px solid blue;
+        }
+        p[class^="main"][class$="end"]{
+            background-color: aqua;
+        }
+        h2[class|="main"]{
+            background-color: black;
+        }
+        div{
+            border: 2px solid blue;
+        }
+        /* h1,h2,p{
+            border:2px solid yellowgreen;
+        } */
+        div > h1,div > p{
+            border : 2px solid rgb(43, 235, 18);
+        }
+
+        h1 + span{
+            border: 2px solid blue;
+        }
+        ul{
+            background-color: blue;
+        }
+        ul:first-child{
+            background-color: black;
+        }
+        li:first-child{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+    </ul>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+    </ul>
+
+    <h1 class="tag heading main " title="Main heading" id="box">Hello</h1>
+    <h1 class="heading" title="Main heading" id="main">Hello</h1>
+    <p class="main-heading-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque earum placeat error nobis minima, blanditiis ducimus vel, quod, quia quos rerum provident illum!</p>
+    <p class="main-heading-end-here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque earum placeat error nobis minima, blanditiis ducimus vel, quod, quia quos rerum provident illum!</p>
+    <a href="http://youtube.com" title="Click"> Youtube</a>
+    <h2 class="main-hello">HELLO H2</h2>
+    <h2 class="mainhello">HELLO H2</h2>
+    <h2 class="hellomain">HELLO H2</h2>
+    <a href="http://youtube.com"> Youtube</a>
+
+
+    <div>
+        <h1>DIV H1</h1>
+        <main>
+            <h1>DIV DIV H1</h1>
+            <span>MAIN SPAN</span>
+            <p>DIV DIV P</p>
+        </main>
+        <p>DIV P</p>
+    </div>
+
+</body>
+</html>
